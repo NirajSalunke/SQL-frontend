@@ -2,7 +2,10 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
+@font-face {
+  font-family: "apple";
+  src: url("./lib/fonts/SFPRODISPLAYREGULAR.OTF");
+}
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -39,7 +42,7 @@
 }
 
 .dark {
-  --background: oklch(0.141 0.005 285.823);
+  --background: #171d24;
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.21 0.006 285.885);
   --card-foreground: oklch(0.985 0 0);
